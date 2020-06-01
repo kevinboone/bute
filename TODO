@@ -1,0 +1,32 @@
+Trap ctrl+c, and display a message. Currently these signals are just ignored.
+Priority: medium; difficulty: non-trivial without a standard C library. 
+Signal-handling is horribly architecture-dependent
+
+Handle over-long lines. This might require significant revision, and make
+  the whole program more complex
+Priority: high; difficulty: probably impossible without turning Bute into a 
+real text editor
+
+Implement a simple text search
+Priority: high; difficulty: unknown. Probably not difficult, but time-consuming
+
+Implement word-forward and word-back
+Priority: medium; difficulty: moderate, given the design constraints of
+low size and complexity. More difficult if the function has to wrap
+over line boundaries
+
+Provide an option to swap backspace and del. More control over key bindings
+in general would be nice.
+Priority: low, unless it proves to be a problem; difficulty: moderate
+
+Hide cursor while refreshing screen
+Priorty: low, unless it proves to be a problem; difficulty: trivial
+
+Warn before writing a file that has changed since it was read
+Priority: low, given the intended application; difficulty: easy but tedious
+
+Provide a way to build using glibc, in situations where portability is
+more important that size or binary compatibility
+Priority: low; difficulty: easy
+
+
